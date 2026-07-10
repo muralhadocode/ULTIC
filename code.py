@@ -4,6 +4,7 @@ while i == True:
     print("1. Metric system converter")
     print("2. Imperial system converter")
     print("3. Time converter")
+    print("4. Velocity converter")
     slct = int(input("Input the number of the area you want to go: "))
     metric_compriment_onm = {
         "mm": 0.001,
@@ -53,3 +54,15 @@ while i == True:
         unit_in_standard = unit_value * unit
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    if slct == 3:
+        unit_slct = input("Type the unit you want to convert: ")
+        unit = time_units_ons.get(unit_slct)
+        unit_value = float(input("Type the unit value: "))
+        unit_slct2 = input("Type the unit of destiny: ")
+        unit_dest = time_units_ons.get(unit_slct2)
+        unit_in_standard = unit_value * unit
+        unit_real = unit_in_standard / unit_dest
+        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    if slct == 4:
+        print("1. km/h to m/s")
+        print("2. m/s to km/h")
