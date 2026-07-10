@@ -41,3 +41,4 @@ if slct == 1:
     unit_dest = metric_compriment_onm.get(unit_slct2)
     unit_in_standard = unit_value*unit
     unit_real = unit_in_standard/unit_dest
+    print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
