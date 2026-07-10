@@ -3,7 +3,7 @@ print("1. Metric system converter")
 print("2. Imperial system converter")
 print("3. Time converter")
 slct = int(input("Input the number of the area you want to go: "))
-metric_compriment = {
+metric_compriment_onm = {
     "mm" : 0.001,
     "cm" : 0.01,
     "dm" : 0.1,
@@ -12,7 +12,7 @@ metric_compriment = {
     "hm" : 100.0,
     "km" : 1000.0,
 }
-imperial_compriment = {
+imperial_compriment_onyard = {
     "inch"   : 0.027778,
     "foot"   : 0.333333,
     "yard"   : 1.0,
@@ -21,7 +21,7 @@ imperial_compriment = {
     "mile"   : 1760.0,
     "league" : 5280,
 }
-time_units = {
+time_units_ons = {
     "nano"    : 0.000000001,
     "micro"   : 0.000001,      
     "milli"   : 0.001,
