@@ -37,5 +37,7 @@ if slct == 1:
     unit_slct = input("Type the unit you want to convert: ")
     unit = metric_compriment_onm.get(unit_slct)
     unit_value = int(input("Type the unit value: "))
+    unit_slct2 = input("Type the unit of destiny: ")
+    unit_dest = metric_compriment_onm.get(unit_slct2)
     unit_in_standard = unit_value*unit
-    unit_real = unit_in_standard/unit
+    unit_real = unit_in_standard/unit_dest
