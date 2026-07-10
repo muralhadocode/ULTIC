@@ -34,4 +34,8 @@ time_units_ons = {
 }
 
 if slct == 1:
-    print()
+    unit_slct = input("Type the unit you want to convert: ")
+    unit = metric_compriment_onm.get(unit_slct)
+    unit_value = int(input("Type the unit value: "))
+    unit_in_standard = unit_value*unit
+    unit_real = unit_in_standard/unit
