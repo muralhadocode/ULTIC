@@ -66,3 +66,12 @@ while i == True:
     if slct == 4:
         print("1. km/h to m/s")
         print("2. m/s to km/h")
+        slct_vc = int(input("Type the number of the conversion: "))
+        if slct_vc == 1:
+            value = float(input("Type your value in km/h: "))
+            final = value / 3.6
+            print(f"{value}km/h = {final}m/s")
+        if slct_vc == 2:
+            value = float(input("Type your value in m/s: "))
+            final = value * 3.6
+            print(f"{value}m/s = {final}km/h")
