@@ -22,7 +22,7 @@ while i == True:
         "chain": 22.0,
         "furlong": 220.0,
         "mile": 1760.0,
-        "league": 5280,
+        "league": 5280.0,
     }
     time_units_ons = {
         "nano": 0.000000001,
@@ -35,6 +35,14 @@ while i == True:
         "month(s)": 2629746.0,
         "year(s)": 31557600.0,
     }
+    velocity_units_onms = {
+        "m/s": 1.0,
+        "km/h": 0.277778,
+        "mph": 0.44704,
+        "knot": 0.514444,
+        "ft/s": 0.3048,
+        "mach": 343.0,
+    }
 
     if slct == 1:
         unit_slct = input("Type the unit you want to convert: ")
@@ -45,7 +53,7 @@ while i == True:
         unit_in_standard = unit_value * unit
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    if slct == 2:
+    elif slct == 2:
         unit_slct = input("Type the unit you want to convert: ")
         unit = imperial_compriment_onyard.get(unit_slct)
         unit_value = float(input("Type the unit value: "))
@@ -54,7 +62,7 @@ while i == True:
         unit_in_standard = unit_value * unit
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    if slct == 3:
+    elif slct == 3:
         unit_slct = input("Type the unit you want to convert: ")
         unit = time_units_ons.get(unit_slct)
         unit_value = float(input("Type the unit value: "))
@@ -63,15 +71,14 @@ while i == True:
         unit_in_standard = unit_value * unit
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    if slct == 4:
-        print("1. km/h to m/s")
-        print("2. m/s to km/h")
-        slct_vc = int(input("Type the number of the conversion: "))
-        if slct_vc == 1:
-            value = float(input("Type your value in km/h: "))
-            final = value / 3.6
-            print(f"{value}km/h = {final}m/s")
-        if slct_vc == 2:
-            value = float(input("Type your value in m/s: "))
-            final = value * 3.6
-            print(f"{value}m/s = {final}km/h")
+    elif slct == 4:
+        unit_slct = input("Type the unit you want to convert: ")
+        unit = velocity_units_onms.get(unit_slct)
+        unit_value = float(input("Type the unit value: "))
+        unit_slct2 = input("Type the unit of destiny: ")
+        unit_dest = velocity_units_onms.get(unit_slct2)
+        unit_in_standard = unit_value * unit
+        unit_real = unit_in_standard / unit_dest
+        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    elif slct == 5:
+        i = False
