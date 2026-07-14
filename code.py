@@ -10,7 +10,7 @@ while i == True:
     print("7. Imperial mass system converter")
     print("8. Metric volume system converter")  # make this and below this one thing
     print("9. Imperial volume system converter")
-    print("10. Metric area system converter")
+    print("10. Metric area system converter")  # make this and below this one thing
     print("11. Imperial area system converter")
 
     slct = int(input("Input the number of the area you want to go: "))
@@ -206,7 +206,22 @@ while i == True:
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
     elif slct == 10:
-
-
+        unit_slct = input("Type the unit you want to convert: ")
+        unit = metric_area_onm2.get(unit_slct)
+        unit_value = float(input("Type the unit value: "))
+        unit_slct2 = input("Type the unit of destiny: ")
+        unit_dest = metric_area_onm2.get(unit_slct2)
+        unit_in_standard = unit_value * unit
+        unit_real = unit_in_standard / unit_dest
+        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    elif slct == 11:
+        unit_slct = input("Type the unit you want to convert: ")
+        unit = imperial_area_onacre.get(unit_slct)
+        unit_value = float(input("Type the unit value: "))
+        unit_slct2 = input("Type the unit of destiny: ")
+        unit_dest = imperial_area_onacre.get(unit_slct2)
+        unit_in_standard = unit_value * unit
+        unit_real = unit_in_standard / unit_dest
+        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
     elif slct == 20:
         i = False
