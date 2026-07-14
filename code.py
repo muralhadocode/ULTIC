@@ -14,6 +14,41 @@ while i == True:
     print("11. Imperial area system converter")
 
     slct = int(input("Input the number of the area you want to go: "))
+    time_units_ons = {
+        "nano": 0.000000001,
+        "micro": 0.000001,
+        "milli": 0.001,
+        "s": 1.0,
+        "min": 60.0,
+        "hour(s)": 3600.0,
+        "day(s)": 86400.0,
+        "month(s)": 2629746.0,
+        "year(s)": 31557600.0,
+    }
+    digital_data_onbit = {
+        "bit": 1.0,
+        "byte": 8.0,
+        "kilobit": 1000.0,
+        "kb": 1000.0,
+        "kilobyte": 8000.0,
+        "KB": 8000.0,
+        "megabit": 1000000.0,
+        "Mb": 1000000.0,
+        "megabyte": 8000000.0,
+        "MB": 8000000.0,
+        "gigabit": 1000000000.0,
+        "Gb": 1000000000.0,
+        "gigabyte": 8000000000.0,
+        "GB": 8000000000.0,
+        "terabyte": 8000000000000.0,
+        "TB": 8000000000000.0,
+        "kibibyte": 8192.0,
+        "KiB": 8192.0,
+        "mebibyte": 8388608.0,
+        "MiB": 8388608.0,
+        "gibibyte": 8589934592.0,
+        "GiB": 8589934592,
+    }
     metric_compriment_onm = {
         "mm": 0.001,
         "cm": 0.01,
@@ -31,17 +66,6 @@ while i == True:
         "furlong": 220.0,
         "mile": 1760.0,
         "league": 5280.0,
-    }
-    time_units_ons = {
-        "nano": 0.000000001,
-        "micro": 0.000001,
-        "milli": 0.001,
-        "s": 1.0,
-        "min": 60.0,
-        "hour(s)": 3600.0,
-        "day(s)": 86400.0,
-        "month(s)": 2629746.0,
-        "year(s)": 31557600.0,
     }
     metric_velocity_onms = {
         "mm/s": 0.001,
@@ -123,7 +147,6 @@ while i == True:
         "mile2": 640.0,
         "mile²": 640,
     }
-
     if slct == 1:
         unit_slct = input("Type the unit you want to convert: ")
         unit = metric_compriment_onm.get(unit_slct)
