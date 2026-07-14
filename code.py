@@ -10,6 +10,8 @@ while i == True:
     print("7. Imperial mass system converter")
     print("8. Metric volume system converter")  # make this and below this one thing
     print("9. Imperial volume system converter")
+    print("10. Metric area system converter")
+    print("11. Imperial area system converter")
 
     slct = int(input("Input the number of the area you want to go: "))
     metric_compriment_onm = {
@@ -91,6 +93,35 @@ while i == True:
         "cup": 0.0625,
         "pint": 0.125,
         "quart": 1.0,
+    }
+    metric_area_onm2 = {
+        "mm²": 0.000001,
+        "mm2": 0.000001,
+        "cm²": 0.0001,
+        "cm2": 0.0001,
+        "dm²": 0.01,
+        "dm2": 0.01,
+        "m²": 1.0,
+        "m2": 1.0,
+        "are": 100.0,
+        "hectare": 10000.0,
+        "km²": 1000000.0,
+        "km2": 1000000.0,
+    }
+    imperial_area_onacre = {
+        "sq inch": 0.000000159,
+        "inch2": 0.000000159,
+        "inch²": 0.000000159,
+        "sq foot": 0.0000229568,
+        "foot2": 0.0000229568,
+        "foot²": 0.0000229568,
+        "sq yard": 0.000206612,
+        "yard2": 0.000206612,
+        "yard²": 0.000206612,
+        "acre": 1.0,
+        "sq mile": 640.0,
+        "mile2": 640.0,
+        "mile²": 640,
     }
 
     if slct == 1:
@@ -174,6 +205,8 @@ while i == True:
         unit_in_standard = unit_value * unit
         unit_real = unit_in_standard / unit_dest
         print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    elif slct == 10:
+
 
     elif slct == 20:
         i = False
