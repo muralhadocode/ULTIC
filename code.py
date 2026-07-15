@@ -1,19 +1,5 @@
 i = True
 while i == True:
-    print("Welcome to the ultimate converter :D")
-    print("1. Metric compriment system converter")  # make this and below this one thing
-    print("2. Imperial compriment system converter")
-    print("3. Time converter")
-    print("4. Metric velocity system converter")  # make this and below this one thing
-    print("5. Imperial velocity system converter")
-    print("6. Metric mass system converter")  # make this and below this one thing
-    print("7. Imperial mass system converter")
-    print("8. Metric volume system converter")  # make this and below this one thing
-    print("9. Imperial volume system converter")
-    print("10. Metric area system converter")  # make this and below this one thing
-    print("11. Imperial area system converter")
-
-    slct = int(input("Input the number of the area you want to go: "))
     time_units_ons = {
         "nano": 0.000000001,
         "micro": 0.000001,
@@ -147,104 +133,155 @@ while i == True:
         "mile2": 640.0,
         "mile²": 640,
     }
-    if slct == 1:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = metric_compriment_onm.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = metric_compriment_onm.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 2:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = imperial_compriment_onyard.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = imperial_compriment_onyard.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 3:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = time_units_ons.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = time_units_ons.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 4:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = metric_velocity_onms.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = metric_velocity_onms.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 5:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = imperial_velocity_onmph.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = imperial_velocity_onmph.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 6:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = metric_mass_ong.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = metric_mass_ong.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 7:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = imperial_mass_onpound.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = imperial_mass_onpound.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 8:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = metric_volume_onl.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = metric_volume_onl.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 9:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = imperial_volume_ongallon.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = imperial_volume_ongallon.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 10:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = metric_area_onm2.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = metric_area_onm2.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 11:
-        unit_slct = input("Type the unit you want to convert: ")
-        unit = imperial_area_onacre.get(unit_slct)
-        unit_value = float(input("Type the unit value: "))
-        unit_slct2 = input("Type the unit of destiny: ")
-        unit_dest = imperial_area_onacre.get(unit_slct2)
-        unit_in_standard = unit_value * unit
-        unit_real = unit_in_standard / unit_dest
-        print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
-    elif slct == 20:
+    print("Welcome to the ultimate converter :D")
+    print("1. Metric system conversion")
+    print("2. Imperial system conversion")
+    print("3. Other conversions")
+    slct_prim = int(input("Type the number of theconverter you want to go: "))
+    if slct_prim == 1:
+        print("1. Metric compriment system converter")
+        print("2. Metric velocity system converter")
+        print("3. Metric mass system converter")
+        print("4. Metric volume system converter")
+        print("5. Metric area system converter")
+        print("6. Go back")
+        slct_sec = int(input("Input the number of the area you want to go: "))
+        if slct_sec == 1:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_compriment_onm.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_compriment_onm.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 2:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_velocity_onms.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_velocity_onms.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 3:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_mass_ong.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_mass_ong.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 4:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_volume_onl.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_volume_onl.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 5:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_area_onm2.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_area_onm2.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 6:
+            print("1. Metric system conversion")
+            print("2. Imperial system conversion")
+            print("3. Other conversions")
+            slct_prim = int(input("Type the number of theconverter you want to go: "))
+        else:
+            print("ERROR: No option encountered for this number")
+    elif slct_prim == 2:
+        print("1. Imperial compriment system converter")
+        print("2. Imperial velocity system converter")
+        print("3. Imperial mass system converter")
+        print("4. Imperial volume system converter")
+        print("5. Imperial area system converter")
+        slct_sec = int(input("Input the number of the area you want to go: "))
+        if slct_sec == 1:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_compriment_onyard.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_compriment_onyard.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 2:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_velocity_onmph.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_velocity_onmph.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 3:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_mass_onpound.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_mass_onpound.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 4:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_volume_ongallon.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_volume_ongallon.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 5:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_area_onacre.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_area_onacre.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 6:
+            print("Welcome to the ultimate converter :D")
+            print("1. Metric system conversion")
+            print("2. Imperial system conversion")
+            print("3. Other conversions")
+            slct_prim = int(input("Type the number of theconverter you want to go: "))
+        else:
+            print("ERROR: No option encountered for this number ")
+    elif slct_prim == 3:
+        print("1. Time units converter")
+        print("2. Digital data units converter")
+        print("3. Temperature units converter")
+        slct_sec = int(input("Input the number of the area you want to go: "))
+        if slct_sec == 1:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = time_units_ons.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = time_units_ons.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 2:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = digital_data_onbit.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = digital_data_onbit.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+    elif slct_prim == 4:
         i = False
+    else:
+        print("ERROR: No option encounterd for this number")
