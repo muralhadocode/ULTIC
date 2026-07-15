@@ -102,7 +102,8 @@ while i == True:
         "fluid ounce": 0.0078125,
         "cup": 0.0625,
         "pint": 0.125,
-        "quart": 1.0,
+        "quart": 0.25,
+        "gallon": 1.0,
     }
     metric_area_onm2 = {
         "mm²": 0.000001,
@@ -196,6 +197,7 @@ while i == True:
             print("2. Imperial system conversion")
             print("3. Other conversions")
             slct_prim = int(input("Type the number of theconverter you want to go: "))
+            continue
         else:
             print("ERROR: No option encountered for this number")
     elif slct_prim == 2:
@@ -204,6 +206,7 @@ while i == True:
         print("3. Imperial mass system converter")
         print("4. Imperial volume system converter")
         print("5. Imperial area system converter")
+        print("6. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -251,11 +254,11 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 6:
-            print("Welcome to the ultimate converter :D")
             print("1. Metric system conversion")
             print("2. Imperial system conversion")
             print("3. Other conversions")
             slct_prim = int(input("Type the number of theconverter you want to go: "))
+            continue
         else:
             print("ERROR: No option encountered for this number ")
     elif slct_prim == 3:
