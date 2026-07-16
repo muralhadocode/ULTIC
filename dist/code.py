@@ -193,10 +193,6 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 6:
-            print("1. Metric system conversion")
-            print("2. Imperial system conversion")
-            print("3. Other conversions")
-            slct_prim = int(input("Type the number of theconverter you want to go: "))
             continue
         else:
             print("ERROR: No option encountered for this number")
@@ -254,10 +250,6 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 6:
-            print("1. Metric system conversion")
-            print("2. Imperial system conversion")
-            print("3. Other conversions")
-            slct_prim = int(input("Type the number of theconverter you want to go: "))
             continue
         else:
             print("ERROR: No option encountered for this number ")
@@ -284,6 +276,34 @@ while i == True:
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 3:
+            unit_orig = input("Type the unit you want to convert: ")
+            unit_value = int(input("Type the value of the unit: "))
+            unit_dest = input("Type the unit of destiny: ")
+            if unit_orig == "celsius" or unit_orig == "C°" or unit_orig == "C":
+                if unit_dest == "fahrenheit" or unit_dest == "F°" or unit_dest == "F":
+                    F = unit_value * 9 / 5 + 32
+                    print(f"{unit_value}C° = {F}F°")
+                elif unit_dest == "kelvin" or unit_dest == "K":
+                    K = unit_value + 273.15
+                    print(f"{unit_value}C° = {K}K")
+            if unit_orig == "fahrenheit" or unit_orig == "F°" or unit_orig == "F":
+                if unit_dest == "celsius" or unit_dest == "C°" or unit_dest == "C":
+                    C = (unit_value - 32) * 5 / 9
+                    print(f"{unit_value}F° = {C}C°")
+                elif unit_dest == "kelvin" or unit_dest == "K":
+                    C = (unit_value - 32) * 5 / 9
+                    K = C + 273.15
+                    print(f"{unit_value}F° = {K}K")
+            if unit_orig == "kelvin" or unit_orig == "K":
+                if unit_dest == "celsius" or unit_dest == "C°" or unit_dest == "C":
+                    C = unit_value - 273.15
+                    print(f"{unit_value}K = {C}C°")
+                elif unit_dest == "fahrenheit" or unit_dest == "F°" or unit_dest == "F":
+                    C = unit_value - 273.15
+                    F = C * 9 / 5 + 32
+                    print(f"{unit_value}K = {F}F°")
+
     elif slct_prim == 4:
         i = False
     else:
