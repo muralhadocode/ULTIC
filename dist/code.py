@@ -278,7 +278,7 @@ while i == True:
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 3:
             unit_orig = input("Type the unit you want to convert: ")
-            unit_value = int(input("Type the value of the unit: "))
+            unit_value = float(input("Type the value of the unit: "))
             unit_dest = input("Type the unit of destiny: ")
             if unit_orig == "celsius" or unit_orig == "C°" or unit_orig == "C":
                 if unit_dest == "fahrenheit" or unit_dest == "F°" or unit_dest == "F":
