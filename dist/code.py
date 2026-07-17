@@ -134,6 +134,18 @@ while i == True:
         "mile2": 640.0,
         "mile²": 640,
     }
+    metric_pressure_onpascal = {
+        "pascal": 1.0,
+        "Pa": 1.0,
+        "hectopascal": 100.0,
+        "hPa": 100.0,
+        "kilopascal": 1000.0,
+        "kPa": 1000.0,
+        "bar": 100000.0,
+        "atmosphere": 101325.0,
+        "atm": 101325.0,
+    }
+    imperial_pressure_onpsi = {}
     print("Welcome to the ultimate converter :D")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
@@ -303,7 +315,6 @@ while i == True:
                     C = unit_value - 273.15
                     F = C * 9 / 5 + 32
                     print(f"{unit_value}K = {F}F°")
-
     elif slct_prim == 4:
         i = False
     else:
