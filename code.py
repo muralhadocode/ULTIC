@@ -219,6 +219,7 @@ while i == True:
         "poundal": 0.0310810,
     }
     print("Welcome to the ultimate converter :D")
+    print("!!PLEASE READ THE README.md SO YOU DONT MAKE WRONG MOVES!!")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
     print("3. Other conversions")
