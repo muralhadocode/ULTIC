@@ -171,6 +171,25 @@ while i == True:
         "ft-lb": 0.000778169,
         "therm": 100000.0,
     }
+    metric_power_onwatt = {
+        "watt": 1.0,
+        "W": 1.0,
+        "kilowatt": 1000.0,
+        "kW": 1000.0,
+        "megawatt": 1000000.0,
+        "MV": 1000000.0,
+        "milliwatt": 0.001,
+        "mW": 0.001,
+    }
+    imperial_power_onhp = {
+        "horsepower": 1.0,
+        "hp": 1.0,
+        "BTU per hour": 0.0003930,
+        "BTU/h": 0.0003930,
+        "foot-pound per second": 0.00181818,
+        "ft-lb/s": 0.00181818,
+    }
+
     print("Welcome to the ultimate converter :D")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
@@ -184,6 +203,7 @@ while i == True:
         print("5. Metric area system converter")
         print("6. Metric pressure system converter")
         print("7. Metric energy system converter")
+        print("8. Metric power system converter")
         print("x. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
@@ -249,6 +269,15 @@ while i == True:
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 8:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_power_onwatt.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_power_onwatt.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 10:
             continue
         else:
@@ -261,6 +290,7 @@ while i == True:
         print("5. Imperial area system converter")
         print("6. Imperial pressure system converter")
         print("7. Imperial energy system converter")
+        print("8. Imperial power system converter")
         print("x. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
@@ -323,6 +353,15 @@ while i == True:
             unit_value = float(input("Type the unit value: "))
             unit_slct2 = input("Type the unit of destiny: ")
             unit_dest = imperial_energy_onbtu.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 8:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_power_onhp.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_power_onhp.get(unit_slct2)
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
