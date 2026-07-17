@@ -116,6 +116,7 @@ while i == True:
         "fluid ounce": 0.0078125,
         "cup": 0.0625,
         "pint": 0.125,
+        "qt": 0.25,
         "quart": 0.25,
         "gallon": 1.0,
     }
@@ -128,6 +129,7 @@ while i == True:
         "dm2": 0.01,
         "m²": 1.0,
         "m2": 1.0,
+        "a": 100.0,
         "are": 100.0,
         "hectare": 10000.0,
         "km²": 1000000.0,
@@ -184,6 +186,7 @@ while i == True:
         "foot-pound": 0.000778169,
         "ft-lb": 0.000778169,
         "therm": 100000.0,
+        "thm": 100000.0,
     }
     metric_power_onwatt = {
         "watt": 1.0,
@@ -191,7 +194,7 @@ while i == True:
         "kilowatt": 1000.0,
         "kW": 1000.0,
         "megawatt": 1000000.0,
-        "MV": 1000000.0,
+        "MW": 1000000.0,
         "milliwatt": 0.001,
         "mW": 0.001,
     }
@@ -209,6 +212,7 @@ while i == True:
         "kilonewton": 1000.0,
         "kN": 1000.0,
         "dyne": 0.00001,
+        "dyn": 0.00001,
         "kilogram-force": 9.80665,
         "kgf": 9.80665,
     }

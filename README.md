@@ -17,7 +17,7 @@ And to select the units you need to see this dictionary so you can see the avail
 
 # Metric system units dictionary:
 
-(You can hust use whats behind the -, so like the one that work is mm, cm, dm, m, etc.)
+(You can just use whats behind the -, so like the one that work is mm, cm, dm, m, etc.)
 
 - Compriment:<br>
   mm - Millimeters<br>
@@ -45,3 +45,100 @@ And to select the units you need to see this dictionary so you can see the avail
   hg - Hectogram<br>
   kg - Kilogram<br>
   tonne - Ton<br>
+
+- Volume:<br>
+  ml - Milliliters<br>
+  cl - Centiliters<br>
+  dl - Deciliters<br>
+  l - Liters<br>
+  m³ or m3 - Cubic meters<br>
+
+- Area:<br>
+  mm² or mm2 - Square millimeters<br>
+  cm² or cm2 - Square centimeters<br>
+  dm² or dm2 - Square decimeters<br>
+  m² or m2 - Square meters<br>
+  a or are - Are<br>
+  hectare - Hectare<br>
+  km² or km2 - Square kilometers<br>
+
+- Pressure:<br>
+  pascal or Pa - Pascal<br>
+  hectopascal or hPA - Hectopascal <br>
+  kilopascal or kPa - Kilopascal<br>
+  bar - Bar<br>
+  atmosphere or atm - Atmosphere<br>
+
+- Energy:<br>
+  joule or J - Joule<br>
+  kilojoule or kJ - Kilojoule<br>
+  calorie or cal - Calorie <br>
+  kilocalorie or kcal - Kilocalorie<br>
+  watt-hour or Wh - Watts per hour<br>
+  kilowatt-hour or kWh - Kilowatt<br>
+
+- Power:<br>
+  watt or W - Watt<br>
+  kilowatt or kW - Kilowatt<br>
+  megawatt or MW - Megawatt<br>
+  milliwatt or mW - Milliwatt<br>
+
+- Force:<br>
+  newton or N - Newtons<br>
+  kilonewton or kN - Kilonewtons<br>
+  dyne or dyn - Dyne<br>
+  kilogram-force or kgf - Kilogram per force<br>
+
+<br>
+
+# Imperial system units dictionary:
+
+- Compriment:<br>
+  inch - Inches<br>
+  foot - Foot<br>
+  yard - Yards<br>
+  chain - Chains<br>
+  furlong - Furlong<br>
+  mile - Miles<br>
+  league - League<br>
+
+- Velocity:<br>
+  ft/s - Feet per second<br>
+  mph - Miles per hour<br>
+  know - Knots<br>
+  mach - Mach<br>
+
+- Mass:<br>
+  grain - Grains<br>
+  dram - Drachma<br>
+  ounce - Ounces<br>
+  pound - Pounds<br>
+  stone - Stones<br>
+  quarter - Quarters<br>
+  hundredweight or cwt - Hundredweight<br>
+  ton or imperial ton - Imperial ton<br>
+
+- Volume:<br>
+  fl oz or fluid ounce - Fluid ounce<br>
+  cup - Cup<br>
+  pint - Pints<br>
+  quart or qt - Quarts<br>
+  gallon - Gallons<br>
+
+- Area:<br>
+  sq inch, inch2 or inch² - Square inches<br>
+  sq foot, foot2 or foot² - Square foot<br>
+  sq yard, yard2 or yard² - Square yards<br>
+  acre - Acre<br>
+  sq mile, mile2 or mile² - Square miles<br>
+
+- Pressure:<br>
+  psi - Pounds per square inch<br>
+  ksi - Kilopound-force per square inch<br>
+  inHg - Inch of mercury<br>
+  mmHg - Millimeters of mercury<br>
+
+- Energy:<br>
+  BTU - British thermal units<br>
+  ft-lb or foot-pound - Foot-pound<br>
+  thm or therm - Therm<br>
