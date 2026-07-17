@@ -35,6 +35,20 @@ while i == True:
         "gibibyte": 8589934592.0,
         "GiB": 8589934592,
     }
+    angle_ondegree = {
+        "degree": 1.0,
+        "°": 1.0,
+        "radian": 57.2958,
+        "gradian": 0.9,
+        "grad": 0.9,
+        "gon": 0.9,
+        "arcminute": 0.0166667,
+        "'": 0.0166667,
+        "arcsecond": 0.000277778,
+        '"': 0.000277778,
+        "turn": 360.0,
+        "full revolution": 360.0,
+    }
     metric_compriment_onm = {
         "mm": 0.001,
         "cm": 0.01,
