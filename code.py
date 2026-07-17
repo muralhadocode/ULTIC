@@ -240,6 +240,15 @@ while i == True:
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 7:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_energy_onjoule.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_energy_onjoule.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 10:
             continue
         else:
@@ -305,6 +314,15 @@ while i == True:
             unit_value = float(input("Type the unit value: "))
             unit_slct2 = input("Type the unit of destiny: ")
             unit_dest = imperial_pressure_onpsi.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 7:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_energy_onbtu.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_energy_onbtu.get(unit_slct2)
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
