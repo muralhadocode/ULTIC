@@ -145,19 +145,41 @@ while i == True:
         "atmosphere": 101325.0,
         "atm": 101325.0,
     }
-    imperial_pressure_onpsi = {}
+    imperial_pressure_onpsi = {
+        "psi": 1.0,
+        "ksi": 1000.0,
+        "inHg": 0.491154,
+        "mmHg": 0.0193368,
+    }
+    metric_energy_onjoule = {
+        "joule": 1.0,
+        "J": 1.0,
+        "kilojoule": 1000.0,
+        "kJ": 1000.0,
+        "calorie": 4.184,
+        "cal": 4.184,
+        "kilocalorie": 4184.0,
+        "kcal": 4184.0,
+        "watt-hour": 3600.0,
+        "Wh": 3600.0,
+        "kilowatt-hour": 3600000.0,
+        "kWh": 3600000.0,
+    }
+
     print("Welcome to the ultimate converter :D")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
     print("3. Other conversions")
-    slct_prim = int(input("Type the number of theconverter you want to go: "))
+    slct_prim = int(input("Type the number of the converter you want to go: "))
     if slct_prim == 1:
         print("1. Metric compriment system converter")
         print("2. Metric velocity system converter")
         print("3. Metric mass system converter")
         print("4. Metric volume system converter")
         print("5. Metric area system converter")
-        print("6. Go back")
+        print("6. Metric pressure system converter")
+        print("7. Metric energy system converter")
+        print("x. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -205,6 +227,15 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 6:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_pressure_onpascal.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_pressure_onpascal.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 10:
             continue
         else:
             print("ERROR: No option encountered for this number")
@@ -214,7 +245,9 @@ while i == True:
         print("3. Imperial mass system converter")
         print("4. Imperial volume system converter")
         print("5. Imperial area system converter")
-        print("6. Go back")
+        print("6. Imperial pressure system converter")
+        print("7. Imperial energy system converter")
+        print("x. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -262,6 +295,15 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 6:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_pressure_onpsi.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_pressure_onpsi.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 10:
             continue
         else:
             print("ERROR: No option encountered for this number ")
