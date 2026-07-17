@@ -189,7 +189,21 @@ while i == True:
         "foot-pound per second": 0.00181818,
         "ft-lb/s": 0.00181818,
     }
-
+    metric_force_onnewton = {
+        "newton": 1.0,
+        "N": 1.0,
+        "kilonewton": 1000.0,
+        "kN": 1000.0,
+        "dyne": 0.00001,
+        "kilogram-force": 9.80665,
+        "kgf": 9.80665,
+    }
+    imperial_force_onlbf = {
+        "pound-force": 1.0,
+        "lbf": 1.0,
+        "ounce-force": 0.0625,
+        "poundal": 0.0310810,
+    }
     print("Welcome to the ultimate converter :D")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
