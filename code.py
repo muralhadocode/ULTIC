@@ -165,7 +165,12 @@ while i == True:
         "kilowatt-hour": 3600000.0,
         "kWh": 3600000.0,
     }
-
+    imperial_energy_onbtu = {
+        "BTU": 1.0,
+        "foot-pound": 0.000778169,
+        "ft-lb": 0.000778169,
+        "therm": 100000.0,
+    }
     print("Welcome to the ultimate converter :D")
     print("1. Metric system conversion")
     print("2. Imperial system conversion")
