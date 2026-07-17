@@ -232,7 +232,8 @@ while i == True:
         print("6. Metric pressure system converter")
         print("7. Metric energy system converter")
         print("8. Metric power system converter")
-        print("x. Go back")
+        print("9. Metric force system converter")
+        print("10. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -306,6 +307,15 @@ while i == True:
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 9:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = metric_force_onnewton.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = metric_force_onnewton.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 10:
             continue
         else:
@@ -319,7 +329,8 @@ while i == True:
         print("6. Imperial pressure system converter")
         print("7. Imperial energy system converter")
         print("8. Imperial power system converter")
-        print("x. Go back")
+        print("9. Imperial force system converter")
+        print("10. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -393,6 +404,15 @@ while i == True:
             unit_in_standard = unit_value * unit
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 9:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = imperial_force_onlbf.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = imperial_force_onlbf.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 10:
             continue
         else:
@@ -401,6 +421,8 @@ while i == True:
         print("1. Time units converter")
         print("2. Digital data units converter")
         print("3. Temperature units converter")
+        print("4. Angle units converter")
+        print("5. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")
@@ -447,6 +469,19 @@ while i == True:
                     C = unit_value - 273.15
                     F = C * 9 / 5 + 32
                     print(f"{unit_value}K = {F}F°")
+        elif slct_sec == 4:
+            unit_slct = input("Type the unit you want to convert: ")
+            unit = angle_ondegree.get(unit_slct)
+            unit_value = float(input("Type the unit value: "))
+            unit_slct2 = input("Type the unit of destiny: ")
+            unit_dest = angle_ondegree.get(unit_slct2)
+            unit_in_standard = unit_value * unit
+            unit_real = unit_in_standard / unit_dest
+            print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
+        elif slct_sec == 5:
+            continue
+        else:
+            print("ERROR: No option encounterd for this number")
     elif slct_prim == 4:
         i = False
     else:
