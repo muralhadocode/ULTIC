@@ -429,7 +429,8 @@ while i == True:
         print("2. Digital data units converter")
         print("3. Temperature units converter")
         print("4. Angle units converter")
-        print("5. Go back")
+        print("5. Fuel consumption units converter")
+        print("6. Go back")
         slct_sec = int(input("Input the number of the area you want to go: "))
         if slct_sec == 1:
             unit_slct = input("Type the unit you want to convert: ")

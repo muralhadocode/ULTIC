@@ -189,3 +189,13 @@ And to select the units you need to see this dictionary so you can see the avail
   arcminute or ' - Arcminute<br>
   arcsecond or " - Arcsecond<br>
   turn or full revolution - Full revolution<br>
+
+- Temperaute:<br>
+  C, C° or celsius - Celsius<br>
+  F, F° or fahrenheit - Fahrenheit<br>
+  K or kelvin - Kelvin<br>
+
+- Fuel consumption:<br>
+  mpg or miles per gallon - Miles per gallon<br>
+  km/l or kilometers per liter - Kiloemeters per liter<br>
+  l/100km or liters per 100km - Liters per 100km<br>
