@@ -220,6 +220,8 @@ while i == True:
         "pound-force": 1.0,
         "lbf": 1.0,
         "ounce-force": 0.0625,
+        "ozf": 0.0625,
+        "pdl": 0.0310810,
         "poundal": 0.0310810,
     }
     print("Welcome to the ultimate converter :D")

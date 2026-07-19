@@ -142,3 +142,50 @@ And to select the units you need to see this dictionary so you can see the avail
   BTU - British thermal units<br>
   ft-lb or foot-pound - Foot-pound<br>
   thm or therm - Therm<br>
+
+- Power:<br>
+  horsepower or hp - Horsepower<br>
+  BTU per hour or BTU/h - British thermal units per hour<br>
+  foot-pound per second or ft-lb/s - Foot-pounds per second<br>
+
+- Force:<br>
+  pound-force or lbf - Pound-force<br>
+  ounce-force or ozf - Ounce-force<br>
+  poundal or pdl - Poundal<br>
+
+<br>
+
+# Other converters dictionaries:
+
+- Time:<br>
+  nano - Nanoseconds<br>
+  micro - Microseconds<br>
+  milli - Milliseconds<br>
+  s - Seconds<br>
+  min - Minutes<br>
+  hour(s) - Hours<br>
+  day(s) - Days<br>
+  month(s) - Months<br>
+  year(s) - Years<br>
+
+- Digital data:<br>
+  bit - Bits<br>
+  byte - Byte<br>
+  kilobit or kb - Kilobits<br>
+  kilobyte or KB - Kilobyte<br>
+  megabit or Mb - Megabit<br>
+  megabyte or MB - Megabyte<br>
+  gigabit or Gb - Gigabit<br>
+  gigabyte or GB - Gigabyte<br>
+  terabyte or TB - Terabyte<br>
+  kikibyte or KiB - Kikibyte<br>
+  mebibyte or MiB - Mebibyte<br>
+  gibibyte or GiB - Gibibyte<br>
+
+- Angle:<br>
+  degree or ° - Degree<br>
+  radian - Radian<br>
+  gradian, grad or gon - Gradian<br>
+  arcminute or ' - Arcminute<br>
+  arcsecond or " - Arcsecond<br>
+  turn or full revolution - Full revolution<br>
