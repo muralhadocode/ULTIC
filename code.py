@@ -486,6 +486,31 @@ while i == True:
             unit_real = unit_in_standard / unit_dest
             print(f"{unit_value}{unit_slct} = {unit_real}{unit_slct2}")
         elif slct_sec == 5:
+            unit_orig = input("Type the unit you want to convert: ")
+            unit_value = float(input("Type the value of the unit: "))
+            unit_dest = input("Type the unit of destiny: ")
+            if unit_orig == "mpg" or unit_orig == "miles per gallon":
+                if unit_dest == "l/100km" or unit_dest == "liters per 100km":
+                    l_100km = 235.215 / unit_value
+                    print(f"{unit_value}mpg = {l_100km}l/100km")
+                elif unit_dest == "km/l" or unit_dest == "kilometers per liter":
+                    km_l = unit_value / 2.35215
+                    print(f"{unit_value}mpg = {km_l}km/l")
+            elif unit_orig == "km/l" or unit_orig == "kilometers per liter":
+                if unit_dest == "l/100km" or unit_dest == "liters per 100km":
+                    l_100km = 100 / unit_value
+                    print(f"{unit_value}km/l = {l_100km}l/100km")
+                elif unit_dest == "mpg" or unit_dest == "miles per gallon":
+                    mpg = unit_value * 2.35215
+                    print(f"{unit_value}km/l = {mpg}mpg")
+            elif unit_orig == "l/100km" or unit_orig == "liters per 100km":
+                if unit_dest == "km/l" or unit_dest == "kilometers per liter":
+                    km_l = 100 / unit_value
+                    print(f"{unit_value}l/100km = {km_l}km/l")
+                elif unit_dest == "mpg" or unit_dest == "miles per gallon":
+                    mpg = 235.215 / unit_value
+                    print(f"{unit_value}l/100km = {mpg}mpg")
+        elif slct_sec == 6:
             continue
         else:
             print("ERROR: No option encounterd for this number")
